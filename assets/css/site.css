@@ -106,7 +106,7 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    background-image: url("../images/intro-bg.jpg");
+    background-image: url("../images/intro-bg.webp");
     background-color: #000; 
     height: 100vh; 
     background-position: center; 

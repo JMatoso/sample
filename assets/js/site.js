@@ -5,6 +5,7 @@ window.addEventListener('load', () => {
         loader.addClass('fadeOut')
     }, 300)
 
+    feather.replace()
     $('#copy').text(new Date().getFullYear())
 })
 
