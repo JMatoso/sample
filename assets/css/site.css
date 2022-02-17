@@ -1,0 +1,170 @@
+@font-face {
+    font-family: 'Circular';
+    src: url('../fonts/CircularStd-Book.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway';
+    src: url('../fonts/raleway-medium-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Marriweather';
+    src: url('../fonts/merriweather-bold-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: 'Circular';
+    background-color: #fff;
+}
+
+.raleway { font-family: 'Raleway'; }
+.marri { font-family: 'Marriweather'; }
+.sticky {
+    background: rgba(20, 23, 28, 0.8) !important;
+    user-select: none;
+    backdrop-filter: saturate(180%) blur(20px);
+    top: 0;
+}
+
+.shadow-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);
+    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#00000000', GradientType=0);
+}
+
+.pricing-item {
+    font-size: 1.4rem;
+    margin-bottom: 0.6rem;
+}
+.pricing-currency {
+    font-size: 18px;
+    vertical-align: top;
+    font-weight: 500;
+}
+.plan-price {
+    word-wrap: break-word;
+    font-family: "Circular", sans-serif;
+    font-size: 1.5rem;
+    line-height: 2;
+    color: white;
+    margin-bottom: 0.6rem;
+}
+.plan-title {
+    word-wrap: break-word;
+    font-family: 'Marriweather';
+    color: #FFFFFF;
+    font-size: 2.4rem;
+    position: relative;
+}
+.plan-body {
+    min-height: 250px;
+    max-height: 250px;
+}
+.pricing-top { 
+    background-color: #58687b; 
+    min-height: 200px;
+    max-height: 200px;
+}
+.bg-dark-1 { background-color: #1f2225; }
+.text-right { text-align: right; }
+.box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
+.bg-transparent { background-color: transparent; }
+.lead {  
+    margin-top: 5px;
+    font-family: 'Raleway';
+}
+.navbar {
+    z-index: 600;
+    background: transparent;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+#intro {
+    top: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../images/intro-bg.jpg");
+    background-color: #000; 
+    height: 100vh; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    background-size: cover; 
+}
+
+#loader {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    transition: all 0.3s ease-in-out;
+    opacity: 1;
+    visibility: visible;
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    background: #000;
+    z-index: 90000;
+}
+
+#loader.fadeOut {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.spinner {
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    top: calc(50% - 60px);
+    left: calc(50% - 20px);
+    background: #343a40; /* Old browsers */
+    background: -moz-linear-gradient(left, #2196fa 0%, #2196fa 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #2196fa 0%,#2196fa 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #2196fa 0%,#2196fa 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2196fa', endColorstr='#2196fa',GradientType=1 ); /* IE6-9 */
+    border-radius: 100%;
+    -webkit-animation: sk-scaleout 1.0s infinite ease-in-out;
+    animation: sk-scaleout 1.0s infinite ease-in-out;
+}
+
+@-webkit-keyframes sk-scaleout {
+    0% { -webkit-transform: scale(0) }
+    100% {
+        -webkit-transform: scale(1.0);
+        opacity: 0;
+    }
+}
+
+@keyframes sk-scaleout {
+    0% {
+        -webkit-transform: scale(0);
+        transform: scale(0);
+    } 100% {
+        -webkit-transform: scale(1.0);
+        transform: scale(1.0);
+        opacity: 0;
+    }
+}
