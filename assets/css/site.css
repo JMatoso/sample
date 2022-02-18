@@ -19,6 +19,13 @@
     font-style: normal;
 }
 
+/*@font-face {
+    font-family: 'Montserrat';
+    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+    font-weight: normal;
+    font-style: normal;
+}*/
+
 html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -26,10 +33,13 @@ html {
 }
 
 body {
-    font-family: 'Circular';
+    font-family: 'Raleway';
     background-color: #fff;
 }
 
+.dif { margin-top: 20px; }
+.text-left { text-align: left; }
+.circular { font-family: 'Circular'; }
 .raleway { font-family: 'Raleway'; }
 .marri { font-family: 'Marriweather'; }
 .sticky {
@@ -39,27 +49,12 @@ body {
     top: 0;
 }
 
-.shadow-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);
-    background: -webkit-linear-gradient(top, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);
-    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.45) 0%, rgba(0, 0, 0, 0.25) 25%, transparent 56%);
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#73000000', endColorstr='#00000000', GradientType=0);
-}
-
-.pricing-item {
-    font-size: 1.4rem;
-    margin-bottom: 0.6rem;
-}
 .pricing-currency {
-    font-size: 18px;
+    font-size: 12px;
     vertical-align: top;
     font-weight: 500;
 }
+
 .plan-price {
     word-wrap: break-word;
     font-family: "Circular", sans-serif;
@@ -68,6 +63,7 @@ body {
     color: white;
     margin-bottom: 0.6rem;
 }
+
 .plan-title {
     word-wrap: break-word;
     font-family: 'Marriweather';
@@ -75,23 +71,28 @@ body {
     font-size: 2.4rem;
     position: relative;
 }
+
 .plan-body {
-    min-height: 250px;
-    max-height: 250px;
+    min-height: 180px;
+    max-height: 180px;
 }
+
 .pricing-top { 
-    background-color: #58687b; 
     min-height: 200px;
     max-height: 200px;
 }
+
+.fwt { margin-top: -.3em; }
+.fwt-big { width: 60px; height: 60px; }
 .bg-dark-1 { background-color: #1f2225; }
 .text-right { text-align: right; }
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 .bg-transparent { background-color: transparent; }
 .lead {  
     margin-top: 5px;
-    font-family: 'Raleway';
+    font-family: 'Circular';
 }
+
 .navbar {
     z-index: 600;
     background: transparent;
@@ -102,11 +103,66 @@ body {
     transition: all 0.3s ease-in-out;
 }
 
+.service-item {
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+    border-radius: 0.3rem;
+    background-color: #fff;
+    padding: 3rem 2rem;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.text-muted-2 { color: #bdbdbd; }
+
+.services-icon {
+    right: 10px;
+    color: #fff;
+    display: inline;
+    padding: 25px;
+    border-radius: 100%;
+    border-bottom-left-radius: 0;
+    margin: 0 auto;
+    background-color: #2196fa;
+}
+
+.service-item:hover {
+    background-color: #2196fa;
+    color: #fff !important;
+}
+
+.project-image {
+    width: 100%;
+    height: 250px;
+    border-radius: .3rem;
+    object-fit: cover;
+    object-position: center;
+}
+.service-item:hover > .service-item h6 { color: #fff !important; }
+.service-item:hover > .services-icon { background-color: #fff !important; }
+.section-padding { 
+    padding-top: 6.5em;
+    padding-bottom: 4.5em;
+}
+.section-info { margin-top: 110px !important; }
+.section-info .line { padding-top: 10px; }
+.section-info .line li:nth-of-type(1) { width: 64px; }
+.section-info .line li:nth-of-type(2) { width: 10px; }
+.section-info .line li:nth-of-type(3) { width: 7px; }
+.section-info .line li {
+    display: inline-block;
+    background-color: #2196fa;
+    border-radius: 50px;
+    height: 3px;
+}
+
 #intro {
     top: 0;
     left: 0;
     right: 0;
-    background-image: url("../images/intro-bg.webp");
+    /*background-image: url("../images/intro-bg.webp");*/
     background-color: #000; 
     height: 100vh; 
     background-position: center; 

@@ -16,8 +16,12 @@
     <title>José Matoso</title>
   
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-	<link rel="stylesheet" href="assets/css/anima/css/style.css">
-	<link rel="stylesheet" href="assets/css/anima/css/reset.css">
+    <!--link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/-->
+
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/owlcarousel/owl.theme.default.min.css">
+
+	<link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/site.css">    
     <link rel="stylesheet" href="assets/css/media.css">    
     
@@ -59,6 +63,9 @@
                             <a class="nav-link disabled fw-bold" href="#blog">Blog</a>
                         </li>
                         <li class="nav-item">
+                            <a class="nav-link fw-bold" href="#experience">Experience</a>
+                        </li>
+                        <li class="nav-item">
                             <a class="nav-link fw-bold" href="#contact">Contact</a>
                         </li>
                     </ul>
@@ -68,199 +75,136 @@
     </header>
 
     <section id="intro">
-        <div class="px-4 py-5 text-center">
-            <div class="mt-5">
-                <div style="margin-top: 10em;"></div>
+        <div class="px-4 py-5">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="mt-5 p-5">
+                        <div style="margin-top: 10em;"></div>
 
-                <h6 class="display-3 fw-bold text-white">Hello, I am José Matoso</h6>
-
-                <section class="cd-intro mt-0">
-                    <h6 class="cd-headline display-6 rotate-1 cd-words-wrapper">
-                        <span class="display-5">What do I do?</small>
-                        <span class="cd-words-wrapper text-white">
-                            <b class="is-visible">Apps</b>
-                            <b>APIs</b>
-                            <b>Sites</b>
-                        </span>
-                    </h6>
-                </section>
-
-                <button type="button" class="btn btn-lg btn-primary rounded-3 btn-lg px-4 gap-3">Get In Touch</button>
+                        <section class="m-0">
+                            <h6 class="dif fs-3 text-white">Hello, I am</h6>
+                            <h1 class="dif fs-1 text-white fw-bold">José Matoso</h1>
+                            <h6 class="dif fs-6 text-muted">Professional Fullstack Developer</h6>
+                            <h6 class="dif fs-6 circular">
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr sed 
+                                diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam.
+                            </h6>
+                            <div class="mt-5">
+                                <button type="button" class="btn btn-lg btn-primary rounded btn-lg px-4 gap-3">Hire Me</button>
+                                <button class="btn btn-lg btn-outline-primary">
+                                    <span data-feather="download" class="fwt"></span>
+                                    <span>Resume</span>
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div>
+                        <img src="assets/images/jt.webp" alt="Jastec logo" class="w-100">
+                    </div>
+                </div>
             </div>
         </div>
     </section>
     
-    <section id="about" class="px-4 py-5 section-info box-shadow">
-        <div class="text-center">
-            <h5 class="text-muted fw-bold text-uppercase">About Me</h5>
-            <h1 class="marri display-5 text-dark mt-2">Who Am I?</h1>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <div class="px-5 less-padding mb-3">
-                    <h5 class="text-muted fw-bold text-uppercase mb-2">Profile</h5>
-                    <p class="lead">
-                        I'm José, a back-end developer, passionate about tech, always open to new challenges and always ready to learn.
-                        I am also an open-source enthusiast and maintainer. 
-                        I learned a lot from the open-source community and I love how collaboration and knowledge sharing happened through open-source...
-                    </p>
-                </div>
-
-                <div class="px-5 mb-3 less-padding">
-                    <h5 class="text-muted fw-bold text-uppercase mb-2">Education</h5>
-
-                    <div class="card p-3 mb-3 bg-dark rounded box-shadow">
-                        <figure class="p-3 mb-0">
-                            <blockquote class="blockquote">
-                                <p>Instituto Médio Comercial de Luanda</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer pt-1 mb-0 text-muted">
-                                Informática de Gestão 
-                            </figcaption>
-                            <small class="blockquote-footer pt-1 mb-0 text-muted">
-                                2017 - 2021 
-                            </small>
-                        </figure>
-                    </div>
-
-                    <div class="card p-3 mb-3 bg-dark rounded box-shadow">
-                        <figure class="p-3 mb-0">
-                            <blockquote class="blockquote">
-                                <p>Instituto Superior Politécnico Metropolitano de Luanda</p>
-                            </blockquote>
-                            <figcaption class="blockquote-footer pt-1 mb-0 text-muted">
-                                Ciências da Computação
-                            </figcaption>
-                            <small class="blockquote-footer pt-1 mb-0 text-muted">
-                                2021 - Current 
-                            </small>
-                        </figure>
+    <section id="about" class="section-info">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div>
+                        Here enters an image
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3">
-                <div class="px-5 less-padding ">
-                    <h5 class="text-muted fw-bold text-uppercase mb-2">Skills</h5>
-                    
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>C#</span>
-                            </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>90%</span>
-                            </div>
+                <div class="col-md-6">
+                    <div>
+                        <div class="">
+                            <h5 class="text-primary fw-bold text-uppercase mb-3">About</h5>
+                            <h1 class="fs-2 text-dark">Why you hire me?</h1>
+    
+                            <ul class="line">
+                                <li></li>
+                                <li></li>
+                                <li></li>
+                            </ul>
                         </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+                        <div class="dif">
+                            <span class="lead d-block text-muted circular">
+                                I'm back-end developer, passionate about tech, always open to new challenges and always ready to learn.
+                                I am also an open-source enthusiast and maintainer. 
+                                I learned a lot from the open-source community and I love how collaboration and knowledge sharing happened through open-source...
+                            </span>
                         </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>JS</span>
+                        <div class="mt-4">
+                            <div class="mb-3">
+                                <div class="row fs-6">
+                                    <div class="col-6 pl-3 mb-2">
+                                        <span>C#</span>
+                                    </div>
+                                    <div class="col-6 text-right pr-3 mb-2">
+                                        <span>90%</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:90%"></div>
+                                </div>
                             </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>50%</span>
+        
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6 pl-3 mb-2">
+                                        <span>JS</span>
+                                    </div>
+                                    <div class="col-6 text-right pr-3 mb-2">
+                                        <span>50%</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:50%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>CSS</span>
+        
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6 pl-3 mb-2">
+                                        <span>CSS</span>
+                                    </div>
+                                    <div class="col-6 text-right pr-3 mb-2">
+                                        <span>80%</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
+                                </div>
                             </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>80%</span>
+        
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6 pl-3 mb-2">
+                                        <span>HTML</span>
+                                    </div>
+                                    <div class="col-6 text-right pr-3 mb-2">
+                                        <span>95%</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:95%"></div>
+                                </div>
                             </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:80%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>HTML</span>
+        
+                            <div class="mb-3">
+                                <div class="row">
+                                    <div class="col-6 pl-3 mb-2">
+                                        <span>PHP</span>
+                                    </div>
+                                    <div class="col-6 text-right pr-3 mb-2">
+                                        <span>25%</span>
+                                    </div>
+                                </div>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%"></div>
+                                </div>
                             </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:95%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>PHP</span>
-                            </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>25%</span>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar progress-bar-striped progress-bar-animated" style="width:25%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3 mt-2">
-                        <button class="btn btn-lg w-100 btn-outline-primary">Download Resume</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-3">
-                <div class="px-5 less-padding">
-                    <h5 class="text-muted fw-bold text-uppercase mb-2">Languages</h5>
-                    
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>Portuguese</span>
-                            </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>100%</span>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:100%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>English</span>
-                            </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>70%</span>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:70%"></div>
-                        </div>
-                    </div>
-
-                    <div class="mb-3">
-                        <div class="row">
-                            <div class="col-6 pl-3 mb-2">
-                                <span>Spanish</span>
-                            </div>
-                            <div class="col-6 text-right pr-3 mb-2">
-                                <span>25%</span>
-                            </div>
-                        </div>
-                        <div class="progress">
-                            <div class="progress-bar bg-success progress-bar-striped progress-bar-animated" style="width:25%"></div>
                         </div>
                     </div>
                 </div>
@@ -268,181 +212,298 @@
         </div>
     </section>
 
-    <section id="portfolio" class="px-4 py-5 section-info bg-light box-shadow">
-        <div class="text-center">
-            <h5 class="text-muted fw-bold text-uppercase">Portfolio</h5>
-            <h1 class="marri display-5 text-dark mt-2">Projects I've done</h1>
-        </div>
+    <section id="services" class="section-info bg-light">
+        <div class="container section-padding">
+            <div class="text-center">
+                <h5 class="text-primary fw-bold text-uppercase mb-3">Services</h5>
+                <h1 class="fs-2 text-dark">What I've For You</h1>
 
-        <div class="p-5 less-padding text-center">
-            <h1>None</h1>
-        </div>
-    </section>
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            
+            <div class="mt-5 pt-5"></div>
 
-    <section id="services" class="px-4 py-5 section-info box-shadow">
-        <div class="text-center">
-            <h5 class="text-muted fw-bold text-uppercase">Services</h5>
-            <h1 class="marri display-5 text-dark mt-2">What I've for you</h1>
-        </div>
-
-        <div class="p-5 less-padding text-center">
             <div class="row">
                 <div class="col-md-4">
-                    <div>
-                        <div class="rounded bg-white border">
-
+                    <div class="service-item">
+                        <div>
+                            <div class="services-icon">
+                                <span data-feather="code"></span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="fw-bold fs-4">Back-End Developing</h3>
+                            <h6 class="dif circular text-muted-2">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, 
+                                sed do eiusmod to incididunt uabore etdolore magna aliqua.
+                            </h6>
                         </div>
                     </div>
                 </div>
-                <div class="col-md-4">
 
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div>
+                            <div class="services-icon">
+                                <span data-feather="layers"></span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="fw-bold fs-4">Webapi Developing</h3>
+                            <h6 class="dif circular text-muted-2">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, 
+                                sed do eiusmod to incididunt uabore etdolore magna aliqua.
+                            </h6>
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-4">
 
+                <div class="col-md-4">
+                    <div class="service-item">
+                        <div>
+                            <div class="services-icon">
+                                <span data-feather="smartphone"></span>
+                            </div>
+                        </div>
+                        <div class="mt-5">
+                            <h3 class="fw-bold fs-4">Mobile Developing</h3>
+                            <h6 class="dif circular text-muted-2">
+                                Lorem ipsum dolor sit aconsect dipisicing elit, 
+                                sed do eiusmod to incididunt uabore etdolore magna aliqua.
+                            </h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="pricing" class="px-4 py-5 section-info bg-light box-shadow">
-        <div class="text-center">
-            <h5 class="text-muted fw-bold text-uppercase">Pricing</h5>
-            <h1 class="marri display-5 text-dark mt-2">My Pricing</h1>
-
-            <p class="lead w-50 mt-3" style="margin: 0 auto;">
-                Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore 
-                officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.
-            </p>
-        </div>
-
-        <div class="p-5 less-padding  text-center">
+    <section id="portfolio" class="section-info">
+        <div class="container">
             <div class="row">
-                <div class="col-md-3 mb-3">
+                <div class="col-6">
                     <div>
-                        <div class="box-shadow border rounded">
-                            <div class="pricing-top rounded-top p-5 text-center">
-                                <h6 class="plan-title">Static Website</h6>
-                                <h4 class="plan-price">
+                        <h5 class="text-primary fw-bold text-uppercase mb-3">Projects</h5>
+                        <h1 class="fs-2 text-dark">Latest Projects</h1>
+            
+                        <ul class="line">
+                            <li></li>
+                            <li></li>
+                            <li></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="text-right">
+                        <a href="https://github.com/JMatoso" target="_blank" class="btn p-3 btn-outline-secondary">All Works</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="mt-5 pt-5"></div>
+
+            <div>
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <div>
+                            <img class="owl-lazy project-image" data-src="assets/images/post-thumb-1.webp" alt="">
+                        </div>
+                        <div class="mt-2">
+                            <h2 class="fs-5 fw-bold">Some Example</h2>
+                            <h6 class="text-muted-2 mt-2">Mobile App</h6>
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <div>
+                            <img class="owl-lazy project-image" data-src="assets/images/intro-bg.webp" alt="">
+                        </div>
+                        
+                        <div class="mt-2">
+                            <h2 class="fs-5 fw-bold text-dark">Some Example</h2>
+                            <h6 class="text-muted-2 mt-2">Desktop App</h6>
+                        </div>
+                    </div>
+    
+                    <div class="item">
+                        <div>
+                            <img class="owl-lazy project-image" data-src="assets/images/features-bg.webp" alt="">
+                        </div>
+                        
+                        <div class="mt-2">
+                            <h2 class="fs-5 fw-bold">Some Example</h2>
+                            <h6 class="text-muted-2 mt-2">Website</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="pricing" class="section-info bg-light">
+        <div class="container section-padding">
+            <div class="text-center">
+                <h5 class="text-primary fw-bold text-uppercase mb-3">Pricing</h5>
+                <h1 class="fs-2 text-dark">My Pricing</h1>
+                
+                <p class="lead w-50 my-3 text-muted-2" style="margin: 0 auto;">
+                    Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore 
+                    officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.
+                </p>
+    
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <div class="mt-5 pt-5"></div>
+    
+            <div>
+                <div class="row">
+                    <div class="col-md-3 mb-3">
+                        <div class="rounded bg-white box-shadow">
+                            <div class="px-5 pt-5 pb-1">
+                                <h3 class="fs-4 fw-normal text-dark circular">Static Website</h3>
+                                <h6 class="plan-price text-primary mt-2 fs-5">
                                     120.000,00
-                                    <span class="pricing-currency">Kz</span>
-                                </h4>
+                                    <small class="pricing-currency">Kz</small>
+                                </h6>
+                                <h6 class="text-muted-2 mt-0">Get In Touch</h6>
+                                <hr>
                             </div>
-                            <div class="pt-5 px-5 pb-3 plan-body">
-                                <h4 class="pricing-item">
+
+                            <div class="px-5 mt-3 plan-body">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">5</b>
                                     <span class="text-muted">Static Pages</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">5</b>
                                     <span class="text-muted">Links</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">3</b>
                                     <span class="text-muted">Reviews</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">24/7</b> 
                                     <span class="text-muted">Support</span>
                                 </h4>
                             </div>
-                            <div class="rounded-bottom pb-5">
-                                <button class="btn btn-lg btn-outline-primary">
+
+                            <div class="px-5 pt-3 pb-5 text-center dif">
+                                <button class="btn w-100 py-3 btn-outline-primary">
                                     Get Started
                                 </button>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-md-3 mb-3">
-                    <div>
-                        <div class="box-shadow border rounded">
-                            <div class="pricing-top bg-success rounded-top p-5 text-center">
-                                <h6 class="plan-title">Dynamic Website</h6>
-                                <h4 class="plan-price">
-                                    200.000,00
-                                    <span class="pricing-currency">Kz</span>
-                                </h4>
+                    
+                    <div class="col-md-3 mb-3">
+                        <div class="rounded bg-white box-shadow">
+                            <div class="px-5 pt-5 pb-1">
+                                <h3 class="fs-4 fw-normal text-dark circular">Dynamic Website</h3>
+                                <h6 class="plan-price text-primary mt-2 fs-5">
+                                    25.000,00
+                                    <small class="pricing-currency">Kz</small>
+                                </h6>
+                                <h6 class="text-muted-2 mt-0">Get In Touch</h6>
+                                <hr>
                             </div>
-                            <div class="pt-5 px-5 pb-3 plan-body">
-                                <h4 class="pricing-item">
-                                    <b class="text-dark">4</b>
+
+                            <div class="px-5 mt-3 plan-body">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
+                                    <b class="text-dark">5</b>
                                     <span class="text-muted">Dynamic Pages</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">5</b>
                                     <span class="text-muted">Links</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">5</b>
                                     <span class="text-muted">Reviews</span>
                                 </h4>
-                                <h4 class="pricing-item">
-                                    <b class="text-dark">1</b> 
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
+                                    <b class="text-dark">1</b>
                                     <span class="text-muted">Blog Area</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">24/7</b> 
                                     <span class="text-muted">Support</span>
                                 </h4>
                             </div>
-                            <div class="rounded-bottom pb-5">
-                                <button class="btn btn-lg btn-primary">
+
+                            <div class="px-5 pt-3 pb-5 text-center dif">
+                                <button class="btn w-100 py-3 btn-outline-primary">
                                     Get Started
                                 </button>
                             </div>
                         </div>
                     </div>
-                </div>
 
-                <div class="col-md-3 mb-3">
-                    <div>
-                        <div class="box-shadow border rounded">
-                            <div class="pricing-top rounded-top p-5 text-center">
-                                <h6 class="plan-title">Web API</h6>
-                                <h4 class="plan-price">
+                    <div class="col-md-3 mb-3">
+                        <div class="rounded bg-white box-shadow">
+                            <div class="px-5 pt-5 pb-1">
+                                <h3 class="fs-4 fw-normal text-dark circular">Webapi</h3>
+                                <h6 class="plan-price text-primary mt-2 fs-5">
                                     25.000,00
-                                    <span class="pricing-currency">Kz</span>
-                                </h4>
-                                <span class="text-white">Per funcionality</span>
+                                    <small class="pricing-currency">Kz</small>
+                                </h6>
+                                <h6 class="text-muted-2 mt-0">Per functionality</h6>
+                                <hr>
                             </div>
-                            <div class="pt-5 px-5 pb-3 plan-body">
-                                <h4 class="pricing-item">
-                                    <b class="text-dark">2</b>
-                                    <span class="text-muted">Reviews</span>
-                                </h4>
-                                <h4 class="pricing-item">
-                                    <b class="text-dark">24/7</b> 
-                                    <span class="text-muted">Support</span>
-                                </h4>
-                            </div>
-                            <div class="rounded-bottom pb-5">
-                                <button class="btn btn-lg btn-outline-primary">
-                                    Get Started
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <div class="col-md-3 mb-3">
-                    <div>
-                        <div class="box-shadow border rounded">
-                            <div class="pricing-top bg-secondary rounded-top p-5 text-center">
-                                <h6 class="plan-title">Other</h6>
-                            </div>
-                            <div class="pt-5 px-5 pb-3 plan-body">
-                                <h4 class="pricing-item">
+                            <div class="px-5 mt-3 plan-body">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">3</b>
                                     <span class="text-muted">Reviews</span>
                                 </h4>
-                                <h4 class="pricing-item">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
                                     <b class="text-dark">24/7</b> 
                                     <span class="text-muted">Support</span>
                                 </h4>
                             </div>
-                            <div class="rounded-bottom pb-5">
-                                <button class="btn btn-lg btn-outline-primary">
+
+                            <div class="px-5 pt-3 pb-5 text-center dif">
+                                <button class="btn w-100 py-3 btn-primary">
+                                    Get Started
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3 mb-3">
+                        <div class="rounded bg-white box-shadow">
+                            <div class="px-5 pt-5 pb-1">
+                                <h3 class="fs-4 fw-normal text-dark circular">Other</h3>
+                                <h6 class="plan-price text-primary mt-2 fs-5">
+                                    -----
+                                    <small class="pricing-currency"></small>
+                                </h6>
+                                <h6 class="text-muted-2 mt-0">Get In Touch</h6>
+                                <hr>
+                            </div>
+
+                            <div class="px-5 mt-3 plan-body">
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
+                                    <b class="text-dark">3</b>
+                                    <span class="text-muted">Reviews</span>
+                                </h4>
+                                <h4 class="pricing-item fs-5 fw-light circular mt-3">
+                                    <b class="text-dark">24/7</b> 
+                                    <span class="text-muted">Support</span>
+                                </h4>
+                            </div>
+
+                            <div class="px-5 pt-3 pb-5 text-center dif">
+                                <button class="btn w-100 py-3 btn-outline-primary">
                                     Get Started
                                 </button>
                             </div>
@@ -453,59 +514,106 @@
         </div>
     </section>
 
-    <section id="contact" class="px-4 py-5 section-info box-shadow">
-        <div class="text-center mb-5">
-            <h5 class="text-muted fw-bold text-uppercase">Contact</h5>
-            <h1 class="marri display-5 text-dark mt-2">Get In Touch</h1>
-
-            <p class="lead w-50 mt-3" style="margin: 0 auto;">
-                Lorem ipsum Do commodo in proident enim in dolor cupidatat adipisicing dolore 
-                officia nisi aliqua incididunt Ut veniam lorem ipsum Consectetur ut in in eu do.
-            </p>
-        </div>
-
-        <div class="row mt-3">
-            <div class="col-md-6">
-                <div class="rounded bg-light border-2 box-shadow p-3">
-                    <div class="google_map_wrapper ">
-                        <iframe class="w-100 rounded" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15769.585265918891!2d13.251242373806868!3d-8.842643598403503!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1a51f3e7a1c57049%3A0x468ab0e94982af0a!2sBAIRRO%20POPULAR%2C%20Luanda!5e0!3m2!1spt-PT!2sao!4v1645086092497!5m2!1spt-PT!2sao" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-					</div>
-                </div>
+    <section id="testimonials" class="section-info">
+        <div class="container">
+            <div class="text-center">
+                <h5 class="text-primary fw-bold text-uppercase mb-3">Testimonials</h5>
+                <h1 class="fs-2 text-dark">What Clients Say</h1>
+    
+                <ul class="line">
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
             </div>
-            <div class="col-md-6">
-                <div class="p-3">
-                    <form action="" method="post">
-                        <div class="row">
-                            <div class="col-6">
-                                <div class="form-floating mb-3">
-                                    <input type="text" class="form-control" id="floatingInput" placeholder="Name Example">
-                                    <label for="floatingInput">Name</label>
-                                </div>
-                            </div>
-                            <div class="col-6">
-                                <div class="form-floating mb-3">
-                                    <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-                                    <label for="floatingInput">Email address</label>
-                                </div>
+
+            <div class="mt-5 pt-5"></div>
+        </div>
+    </section>
+
+    <section id="work-resume" class="section-info bg-light">
+        <div class="container section-padding">
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-right text-muted">
+                                <span data-feather="check-circle" class="fwt-big"></span>
                             </div>
                         </div>
-                        <div class="form-floating mb-3">
-                            <input type="text" class="form-control" id="floatingInput" placeholder="Aa">
-                            <label for="floatingInput">Subject</label>
+                        <div class="col-6">
+                            <div class="p-1">
+                                <h1 class="fs-1 fw-bold text-primary circular">
+                                    <span>1</span>
+                                    <span>&plus;</s>
+                                </h1>
+                                <h6 class="text-muted mt-2 circular">Projects Done</h6>
+                            </div>
                         </div>
-
-                        <div class="mb-3">
-                            <textarea class="form-control" cols="10" rows="10"></textarea>
-                        </div>
-
-                        <div>
-                            <button type="submit" class="btn btn-primary">Send Message</button>
-                        </div>
-                    </form>
+                    </div>
                 </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-right text-muted">
+                                <span data-feather="smile" class="fwt-big"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-1">
+                                <h1 class="fs-1 fw-bold text-primary circular">
+                                    <span>10</span>
+                                    <span>&plus;</s>
+                                </h1>
+                                <h6 class="text-muted mt-2 circular">Satisfied Clients</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-right text-muted">
+                                <span data-feather="activity" class="fwt-big"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-1">
+                                <h1 class="fs-1 fw-bold text-primary circular">
+                                    <span>5</span>
+                                </h1>
+                                <h6 class="text-muted mt-2 circular">Active Projects</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="row">
+                        <div class="col-6">
+                            <div class="text-right text-muted">
+                                <span data-feather="check-circle" class="fwt-big"></span>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="p-1">
+                                <h1 class="fs-1 fw-bold text-primary circular">
+                                    <span>5</span>
+                                </h1>
+                                <h6 class="text-muted mt-2 circular">Years Experience</h6>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="pb-3"></div>
             </div>
         </div>
     </section>
+
+    <section id="experience" class="section-info"></section>
 
     <section id="clients" class="px-4 py-5 section-info box-shadow bg-light">
         <div class="text-center mb-5">
@@ -560,17 +668,16 @@
 
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/feather-icons/dist/feather.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-<script src="assets/css/anima/js/main.js"></script>
-<script src="assets/css/anima/js/modernizr.js"></script>
+<!--script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"--></script>
 <script src="assets/js/site.js"></script>
-<script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
+<script src="assets/js/owlcarousel/owl.carousel.min.js"></script>
+<!--script src="//cdn.conveythis.com/javascript/conveythis-initializer.js"></script>
 <script type="text/javascript">
 	document.addEventListener("DOMContentLoaded", function(e) {
 		ConveyThis_Initializer.init({
 			api_key: "pub_e556cc32509dc65d7f13689e43e1d59b"
 		});
 	});
-</script>
+</script-->
 </body>
 </html>
