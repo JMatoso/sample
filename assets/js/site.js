@@ -36,6 +36,23 @@ window.addEventListener('load', () => {
     );
 
     $('body').scrollspy({ target: '.navbar' })
+
+    $('.counter').counterUp({ 
+        delay: 10, 
+        time: 1600 
+    }); 
+
+    if ($('.progress-bar').length) { 
+        $('.progress-bar').appear(function () 
+        { 
+            var el = $(this); 
+            var percent = el.data('width'); 
+            $(el).css('width', percent + '%'); 
+        }, { accY: 0 }); 
+    }
+
+    var wow = new WOW({ boxClass: 'wow', mobile: false, })
+    wow.init();
 })
 
 $(window).bind('scroll', () => {

@@ -155,8 +155,8 @@ body {
     transition: all 0.3s ease-out 0s;
 }
 
-.service-item:hover > .service-item h6 { color: #fff !important; }
-.service-item:hover > .services-icon { background-color: #fff !important; }
+.service-item:hover > div > h6 { color: #fff !important; }
+.service-item:hover > .services-icon { background-color: #fff !important; color: #2196fa; }
 .section-padding { 
     padding-top: 6.5em;
     padding-bottom: 4.5em;
@@ -258,11 +258,11 @@ body {
     border-radius: 10px;
     background-color: #fff;
     width: 46%;
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.1s ease-out 0.1s;
+    -moz-transition: all 0.1s ease-out 0.1s;
+    -ms-transition: all 0.1s ease-out 0.1s;
+    -o-transition: all 0.1s ease-out 0.1s;
+    transition: all 0.1s ease-out 0.1s;
 }
 
 .order-first {
@@ -274,6 +274,9 @@ body {
     -ms-flex-order: 13;
     order: 13;
 }
+
+.single-experience:hover > .experience-content,
+.single-experience:hover > .experience-number span  { background-color: #2196fa; color: #fff; }
 
 #intro {
     top: 0;
@@ -341,11 +344,3 @@ body {
         opacity: 0;
     }
 }
-
-.wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; }
-.bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
-.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
-.delay-10s { animation-delay: 0.10s; -webkit-animation-delay: 0.10s; }
-.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
-.delay-15s { animation-delay: 1.5s; -webkit-animation-delay: 1.5s; }
-.delay-20s { animation-delay: 2s; -webkit-animation-delay: 2s; }

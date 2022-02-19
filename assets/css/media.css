@@ -11,4 +11,31 @@
     }
 
     .lead { width: 100% !important; }
+
+    .work-experience::before { 
+        display: none;
+        left: 0;
+        width: 0;
+        height: 0;
+        background-color: #fff;
+        z-index: 0;
+    }
+    
+    .single-experience .experience-number span { display: none; }
+    .single-experience .experience-content {
+        -webkit-box-shadow: none;
+        -moz-box-shadow: none;
+        box-shadow: none;
+        padding: 0;
+        margin-bottom: 15px;
+        width: 100%;
+    }
+
+    .single-experience .experience-title {
+        width: 100%;
+        margin-top: 2px;
+        text-align: left;
+    }
+    .single-experience:hover > .experience-content,
+    .single-experience:hover > .experience-number span  { background-color: #fff; color: #646F87; }
 }
