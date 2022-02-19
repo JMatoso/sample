@@ -34,6 +34,8 @@ window.addEventListener('load', () => {
             }
         }
     );
+
+    $('body').scrollspy({ target: '.navbar' })
 })
 
 $(window).bind('scroll', () => {
