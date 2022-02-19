@@ -19,13 +19,6 @@
     font-style: normal;
 }
 
-/*@font-face {
-    font-family: 'Montserrat';
-    src: url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
-    font-weight: normal;
-    font-style: normal;
-}*/
-
 html {
     scroll-behavior: smooth;
     -webkit-font-smoothing: antialiased;
@@ -38,6 +31,8 @@ body {
 }
 
 .dif { margin-top: 20px; }
+.dif-2 { margin-top: 1px; }
+
 .text-left { text-align: left; }
 .circular { font-family: 'Circular'; }
 .raleway { font-family: 'Raleway'; }
@@ -140,6 +135,26 @@ body {
     object-fit: cover;
     object-position: center;
 }
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-right: 10px;
+    background-color: rgba(41, 54, 81, 0.07);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
 .service-item:hover > .service-item h6 { color: #fff !important; }
 .service-item:hover > .services-icon { background-color: #fff !important; }
 .section-padding { 
@@ -156,6 +171,108 @@ body {
     background-color: #2196fa;
     border-radius: 50px;
     height: 3px;
+}
+
+.work-experience {
+    position: relative;
+    margin-top: 30px;
+}
+
+.work-experience::before {
+    position: absolute;
+    content: '';
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    -o-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 0;
+    width: 3px;
+    height: 100%;
+    background-color: #2196fa;
+    z-index: -100;
+}
+
+.single-experience .experience-number span {
+    width: 55px;
+    height: 55px;
+    line-height: 51px;
+    text-align: center;
+    border: 2px solid #2196fa;
+    font-size: 20px;
+    font-family: "Circular", sans-serif;
+    color: #2196fa;
+    border-radius: 50%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+    background-color: #fff;
+    padding: 10px;
+    z-index: 1000;
+}
+
+.single-experience .experience-title .title {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.single-experience .experience-title p {
+    color: #2196fa;
+    font-size: 16px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+
+.single-experience .experience-title .date {
+    font-size: 16px;
+    font-weight: 600;
+    color: #646F87;
+    margin-top: 10px;
+}
+
+.single-experience .experience-title { width: 46%; }
+.single-experience .experience-number {
+    width: 8%;
+    text-align: center;
+}
+
+.single-experience .experience-content p {
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.single-experience .experience-content {
+    -webkit-box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+    -moz-box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+    box-shadow: 0 0.25rem 0.75rem rgb(0 0 0 / 5%);
+    padding: 30px;
+    color: #646F87;
+    font-family: "Circular", sans-serif;
+    font-weight: lighter;
+    border-radius: 10px;
+    background-color: #fff;
+    width: 46%;
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
+
+.order-first {
+    -ms-flex-order: -1;
+    order: -1;
+}
+
+.order-last {
+    -ms-flex-order: 13;
+    order: 13;
 }
 
 #intro {
