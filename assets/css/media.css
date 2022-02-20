@@ -40,4 +40,6 @@
     .single-experience:hover > .experience-number span  { background-color: #fff; color: #646F87; }
 
     #social-media {width: 100% !important;}
+    #work-resume { text-align: center !important;}
+    #work-resume .col-md-3 { margin-bottom: 5px; }
 }

@@ -38,10 +38,13 @@ body {
 .raleway { font-family: 'Raleway'; }
 .marri { font-family: 'Marriweather'; }
 .sticky {
-    background: rgba(20, 23, 28, 0.8) !important;
     user-select: none;
     backdrop-filter: saturate(180%) blur(20px);
     top: 0;
+}
+
+.bg-dark-2 {
+    background: rgba(20, 23, 28, 0.8) !important;
 }
 
 .pricing-currency {
@@ -96,6 +99,12 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
+}
+
+.bg-gradient {
+    background: #43cea2;
+    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
+    background: linear-gradient(to right, #185a9d, #43cea2); 
 }
 
 .service-item {
@@ -297,8 +306,10 @@ body {
     top: 0;
     left: 0;
     right: 0;
-    /*background-image: url("../images/intro-bg.webp");*/
-    background-color: #000; 
+    background-image: url("../images/intro-bg.webp");
+    /*background: #196cb4;
+    background: -webkit-linear-gradient(to right, #196cb4, #196cb4);
+    background: linear-gradient(to right, #196cb4, #196cb4); */
     height: 100vh; 
     background-position: center; 
     background-repeat: no-repeat; 

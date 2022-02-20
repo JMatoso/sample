@@ -1,15 +1,49 @@
+'use strict'
 
 window.addEventListener('load', () => {
-    const loader = $('#loader')
-
-    setTimeout(() => {
-        loader.addClass('fadeOut')
-    }, 300)
+    
+    owl()
+    loader()
+    progress()
 
     feather.replace()
 
-    $('#copy').text(new Date().getFullYear())
+    new WOW({ 
+        boxClass: 'wow', 
+        mobile: true, 
+    }).init()
 
+    $('.counter').counterUp(
+        { 
+            delay: 10, 
+            time: 1600 
+        }
+    )
+
+    $('body').scrollspy(
+        { 
+            target: '.navbar', 
+            offset:0 
+        }
+    )    
+
+    $('#copy').text(new Date().getFullYear())
+})
+
+function progress()
+{
+    if ($('.progress-bar').length) { 
+        $('.progress-bar').appear(function () 
+        { 
+            var el = $(this); 
+            var percent = el.data('width'); 
+            $(el).css('width', percent + '%'); 
+        }, { accY: 0 }); 
+    }
+}
+
+function owl()
+{
     $(".owl-portfolio").owlCarousel(
         {
             loop:true,
@@ -86,35 +120,38 @@ window.addEventListener('load', () => {
             }
         }
     );
+}
 
-    $('body').scrollspy({ target: '.navbar' })
+function loader()
+{
+    const loader = $('#loader')
 
-    $('.counter').counterUp({ 
-        delay: 10, 
-        time: 1600 
-    }); 
+    setTimeout(() => {
+        loader.addClass('fadeOut')
+    }, 300)
+}
 
-    if ($('.progress-bar').length) { 
-        $('.progress-bar').appear(function () 
-        { 
-            var el = $(this); 
-            var percent = el.data('width'); 
-            $(el).css('width', percent + '%'); 
-        }, { accY: 0 }); 
-    }
-
-    var wow = new WOW({ boxClass: 'wow', mobile: false, })
-    wow.init();
-})
-
-$(window).bind('scroll', () => {
+$(window).bind('scroll', () => 
+{
     const navbar = $('.navbar')
 
-    if($(window).scrollTop() > 20){
+    if($(window).scrollTop() > 20)
+    {
         navbar.addClass("sticky box-shadow")
         navbar.removeClass("pt-5")
-    }else{
-        navbar.removeClass("sticky box-shadow")
+
+        if($(window).scrollTop() > (window.innerHeight - 100))
+        {
+            navbar.addClass("bg-dark-2")
+        }
+        else
+        {
+            navbar.removeClass("bg-dark-2")
+        }
+    }
+    else
+    {
+        navbar.removeClass("sticky box-shadow bg-dark-2")
         navbar.addClass("pt-5")
     }
 })
