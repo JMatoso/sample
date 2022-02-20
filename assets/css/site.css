@@ -110,6 +110,14 @@ body {
     transition: all 0.3s ease-out 0s;
 }
 
+.service-item > div > h3 {
+    -webkit-transition: all 0.1s ease-out 0s !important;
+    -moz-transition: all 0.1s ease-out 0s !important;
+    -ms-transition: all 0.1s ease-out 0s !important;
+    -o-transition: all 0.1s ease-out 0s !important;
+    transition: all 0.1s ease-out 0s !important;
+}
+
 .text-muted-2 { color: #bdbdbd; }
 
 .services-icon {
@@ -136,26 +144,12 @@ body {
     object-position: center;
 }
 
-.social-link {
-    width: 40px;
-    height: 40px;
-    line-height: 40px;
-    text-align: center;
-    border-radius: 100%;
-    font-size: 18px;
-    color: #000;
-    text-decoration: none;
-    padding: 20px 20px;
-    margin-bottom: 4px;
-    margin-right: 10px;
-    background-color: rgba(41, 54, 81, 0.07);
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+.testimonials-image {
+    border-radius: 20%;
+    border-bottom-left-radius: 0;
+    object-fit: cover;
+    object-position: center;
 }
-
 .service-item:hover > div > h6 { color: #fff !important; }
 .service-item:hover > .services-icon { background-color: #fff !important; color: #2196fa; }
 .section-padding { 
@@ -278,6 +272,26 @@ body {
 
 .single-experience:hover > .experience-content,
 .single-experience:hover > .experience-number span  { background-color: #2196fa; color: #fff; }
+
+.social-link {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+    border-radius: 100%;
+    font-size: 18px;
+    color: #000;
+    text-decoration: none;
+    padding: 20px 20px;
+    margin-bottom: 4px;
+    margin-right: 10px;
+    background-color: rgba(41, 54, 81, 0.07);
+    -webkit-transition: all 0.3s ease-out 0s;
+    -moz-transition: all 0.3s ease-out 0s;
+    -ms-transition: all 0.3s ease-out 0s;
+    -o-transition: all 0.3s ease-out 0s;
+    transition: all 0.3s ease-out 0s;
+}
 
 #intro {
     top: 0;

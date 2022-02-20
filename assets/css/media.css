@@ -38,4 +38,6 @@
     }
     .single-experience:hover > .experience-content,
     .single-experience:hover > .experience-number span  { background-color: #fff; color: #646F87; }
+
+    #social-media {width: 100% !important;}
 }

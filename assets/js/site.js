@@ -10,14 +10,43 @@ window.addEventListener('load', () => {
 
     $('#copy').text(new Date().getFullYear())
 
-    $(".owl-carousel").owlCarousel(
+    $(".owl-portfolio").owlCarousel(
         {
             loop:true,
             margin:10,
             autoplay:true,
+            autoplayHoverPause:true,
             nav:true,
             lazyLoad:true,
-            items: 3,
+            items:3,
+            responsiveClass:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:2,
+                    nav:true
+                },
+                1000:{
+                    items:3,
+                    nav:true
+                }
+            }
+        }
+    );
+
+    $(".owl-clients").owlCarousel(
+        {
+            loop:true,
+            margin:10,
+            autoplay:true,
+            autoplayHoverPause:true,
+            nav:true,
+            lazyLoad:true,
+            items:5,
+            responsiveClass:true,
             responsive:{
                 0:{
                     items:1,
@@ -29,6 +58,29 @@ window.addEventListener('load', () => {
                 },
                 1000:{
                     items:5,
+                    nav:true
+                }
+            }
+        }
+    );
+
+    $(".owl-testimonials").owlCarousel(
+        {
+            items:2,
+            margin:30,
+            responsiveClass:true,
+            nav:true,
+            responsive:{
+                0:{
+                    items:1,
+                    nav:true
+                },
+                600:{
+                    items:1,
+                    nav:true
+                },
+                1000:{
+                    items:2,
                     nav:true
                 }
             }
