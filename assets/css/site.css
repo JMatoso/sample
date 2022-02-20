@@ -43,6 +43,36 @@ body {
     top: 0;
 }
 
+.back-top {
+    cursor: pointer;
+    display: inline-flex;
+    background-color: #2196fa;
+    color: #fff;
+    position: fixed !important;
+    z-index: 1;
+    left: 20px;
+    bottom: 20px;
+    padding: 1px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 100%;
+    box-shadow: 0 .75rem 1rem rgba(0, 0, 0, .05);
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    -webkit-transition: all 0.3s ease-in-out;
+    -ms-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.back-top a { 
+    padding: 20px;
+    text-decoration: none; 
+    color: white; 
+}
+
+.back-top:hover { background-color: #fff; }
+.back-top:hover > a { color: #2196fa; }
+
 .bg-dark-2 {
     background: rgba(20, 23, 28, 0.8) !important;
 }
@@ -99,12 +129,6 @@ body {
     -webkit-transition: all 0.3s ease-in-out;
     -ms-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
-}
-
-.bg-gradient {
-    background: #43cea2;
-    background: -webkit-linear-gradient(to right, #185a9d, #43cea2);
-    background: linear-gradient(to right, #185a9d, #43cea2); 
 }
 
 .service-item {

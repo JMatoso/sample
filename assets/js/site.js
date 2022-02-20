@@ -10,7 +10,7 @@ window.addEventListener('load', () => {
 
     new WOW({ 
         boxClass: 'wow', 
-        mobile: true, 
+        mobile: false, 
     }).init()
 
     $('.counter').counterUp(
@@ -140,7 +140,7 @@ $(window).bind('scroll', () =>
         navbar.addClass("sticky box-shadow")
         navbar.removeClass("pt-5")
 
-        if($(window).scrollTop() > (window.innerHeight - 100))
+        if($(window).scrollTop() > (window.innerHeight - 60))
         {
             navbar.addClass("bg-dark-2")
         }
@@ -153,5 +153,21 @@ $(window).bind('scroll', () =>
     {
         navbar.removeClass("sticky box-shadow bg-dark-2")
         navbar.addClass("pt-5")
+    }
+
+    var body = document.body,
+    html = document.documentElement;
+
+    const backTop = $('.back-top')
+
+    var height = Math.max(body.scrollHeight, body.offsetHeight, html.clientHeight, html.scrollHeight, html.offsetHeight);
+
+    if($(window).scrollTop() >= (height / 2))
+    {
+        backTop.fadeIn(3000)
+    }
+    else
+    {
+        backTop.fadeOut(3000)
     }
 })
