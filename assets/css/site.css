@@ -211,7 +211,7 @@ body {
     -o-transition: all 0.3s ease-out 0s;
     transition: all 0.3s ease-out 0s;
     background-color: #fff;
-    padding: 10px;
+    padding: 15px;
     z-index: 1000;
 }
 
@@ -241,11 +241,11 @@ body {
 }
 
 .single-experience .experience-content p {
-    -webkit-transition: all 0.3s ease-out 0s;
-    -moz-transition: all 0.3s ease-out 0s;
-    -ms-transition: all 0.3s ease-out 0s;
-    -o-transition: all 0.3s ease-out 0s;
-    transition: all 0.3s ease-out 0s;
+    -webkit-transition: all 0.1s ease-out 0s;
+    -moz-transition: all 0.1s ease-out 0s;
+    -ms-transition: all 0.1s ease-out 0s;
+    -o-transition: all 0.1s ease-out 0s;
+    transition: all 0.1s ease-out 0s;
 }
 
 .single-experience .experience-content {
