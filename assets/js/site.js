@@ -142,16 +142,16 @@ $(window).bind('scroll', () =>
 
         if($(window).scrollTop() > (window.innerHeight - 60))
         {
-            navbar.addClass("bg-dark-2")
+            navbar.addClass("bg-blue-2")
         }
         else
         {
-            navbar.removeClass("bg-dark-2")
+            navbar.removeClass("bg-blue-2")
         }
     }
     else
     {
-        navbar.removeClass("sticky box-shadow bg-dark-2")
+        navbar.removeClass("sticky box-shadow bg-blue-2")
         navbar.addClass("pt-5")
     }
 
@@ -164,10 +164,10 @@ $(window).bind('scroll', () =>
 
     if($(window).scrollTop() >= (height / 2))
     {
-        backTop.fadeIn(3000)
+        backTop.removeClass('d-none')
     }
     else
     {
-        backTop.fadeOut(3000)
+        backTop.addClass('d-none')
     }
 })
